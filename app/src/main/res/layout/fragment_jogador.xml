@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentJog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogadorFragment">
+
+    <EditText
+        android:id="@+id/etCodigoJog"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="@string/codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="210dp" />
+
+    <Button
+        android:id="@+id/btnBuscarJog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/buscar"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeJog"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeJog"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="@string/nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarJog"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etAlturaJog"
+        android:layout_width="356dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="@string/altura"
+        app:layout_constraintBottom_toTopOf="@+id/etTimeJog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeJog"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etPesoJog"
+        android:layout_width="357dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="58dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="@string/peso"
+        app:layout_constraintBottom_toBottomOf="@+id/etTimeJog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etAlturaJog"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etTimeJog"
+        android:layout_width="358dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="314dp"
+        android:layout_marginBottom="314dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="@string/time"
+        app:layout_constraintBottom_toBottomOf="@+id/tvListarJog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTituloJog"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/btnInserirJog"
+        android:layout_width="162dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="65dp"
+        android:text="@string/inserir"
+        app:layout_constraintBottom_toBottomOf="@+id/btnExcluirJog"
+        app:layout_constraintEnd_toStartOf="@+id/btnModificarJog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etTimeJog"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnExcluirJog"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="173dp"
+        android:text="@string/excluir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnInserirJog"
+        app:layout_constraintStart_toStartOf="@+id/etTimeJog" />
+
+    <Button
+        android:id="@+id/btnModificarJog"
+        android:layout_width="130dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="69dp"
+        android:text="@string/modificar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnListarJog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInserirJog"
+        app:layout_constraintTop_toTopOf="@+id/etTimeJog"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnListarJog"
+        android:layout_width="121dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/listar"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarJog"
+        app:layout_constraintEnd_toEndOf="@+id/btnModificarJog"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/btnModificarJog"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserirJog"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvListarJog"
+        android:layout_width="410dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascJog" />
+
+    <TextView
+        android:id="@+id/etTituloJog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:importantForAutofill="no"
+        android:text="@string/jogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataNascJog"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="334dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="@string/data"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarJog"
+        app:layout_constraintEnd_toEndOf="@+id/etAlturaJog"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNomeJog"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

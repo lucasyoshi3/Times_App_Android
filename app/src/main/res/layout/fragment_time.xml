@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentTime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeFragment">
+
+    <EditText
+        android:id="@+id/etCodigoTime"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBuscarTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/etCodigoTime"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="94dp"
+        android:importantForAutofill="no"
+        android:text="@string/time"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/etNomeTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeTime"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etCidadeTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloTime" />
+
+    <EditText
+        android:id="@+id/etCidadeTime"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="@string/cidade"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnInserirTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeTime" />
+
+    <Button
+        android:id="@+id/btnInserirTime"
+        android:layout_width="117dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="23dp"
+        android:text="@string/inserir"
+        app:layout_constraintBottom_toTopOf="@+id/btnExcluirTime"
+        app:layout_constraintEnd_toStartOf="@+id/btnModificarTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCidadeTime" />
+
+    <Button
+        android:id="@+id/btnModificarTime"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="71dp"
+        android:text="@string/modificar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnListarTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInserirTime"
+        app:layout_constraintTop_toTopOf="@+id/etCidadeTime" />
+
+    <Button
+        android:id="@+id/btnExcluirTime"
+        android:layout_width="126dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="76dp"
+        android:text="@string/excluir"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarTime"
+        app:layout_constraintEnd_toStartOf="@+id/btnListarTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserirTime" />
+
+    <Button
+        android:id="@+id/btnListarTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/listar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnExcluirTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnExcluirTime"
+        app:layout_constraintTop_toTopOf="@+id/btnExcluirTime" />
+
+    <TextView
+        android:id="@+id/tvListarTime"
+        android:layout_width="407dp"
+        android:layout_height="231dp"
+        android:layout_marginBottom="4dp"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExcluirTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

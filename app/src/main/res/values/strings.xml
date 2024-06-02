@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Times_App_Android</string>
+    <string name="nome">Nome</string>
+    <string name="time">Time</string>
+    <string name="jogador">Jogador</string>
+    <string name="inserir">Inserir</string>
+    <string name="modificar">Modificar</string>
+    <string name="excluir">Excluir</string>
+    <string name="buscar">Buscar</string>
+    <string name="listar">Listar</string>
+    <string name="inicio">App Times</string>
+    <string name="codigo">Codigo</string>
+    <string name="cidade">Cidade</string>
+    <string name="altura">Altura</string>
+    <string name="data">Data de Nascimento</string>
+    <string name="peso">Peso</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
